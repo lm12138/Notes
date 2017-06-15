@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center"
+        >
+   <CheckBox
+       android:id="@+id/lv_checkAll"
+       android:layout_width="30dp"
+       android:layout_height="30dp" />
+    <TextView
+        android:textSize="20dp"
+        android:text="全选"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+       <Button
+        android:id="@+id/delete"
+           android:text="删除"
+           android:textSize="20dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="#F5F5F5"/>
+        <!--android:drawableLeft="@drawable/delete"-->
+    </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="3dp"></ListView>
+
+
+
+</LinearLayout>

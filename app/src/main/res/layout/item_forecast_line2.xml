@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="32dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:id="@+id/forecast_icon2"
+        android:layout_gravity="center_vertical"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp">
+
+        <TextView
+            android:id="@+id/forecast_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="明天"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/forecast_temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="5° 13°"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/forecast_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forecast_date2"
+            android:layout_marginTop="4dp"
+            android:text="少云。最高12℃。东北风 10 到 15 km/h"
+            android:textColor="#969696"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+</LinearLayout>

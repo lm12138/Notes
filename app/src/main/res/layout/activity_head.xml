@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_head"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.edu.notes.HeadActivity">
+    <include layout="@layout/include_header_head"></include>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/head_image_cut"
+        android:layout_marginTop="40dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/timg"
+        android:onClick="cutPhoto"
+        app:civ_border_color="#4a9bec"
+        app:civ_border_width="0.5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="    点击设置头像"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:id="@+id/textView" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/wrap_layout_head"
+        android:id="@+id/user_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/textView"
+        android:layout_gravity="center_horizontal">
+        <!--昵称-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_marginLeft="25dp"
+                style="@style/base_layout"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="昵称"
+                android:textSize="15dp"/>
+
+            <EditText
+                style="@style/base_layout"
+                android:id="@+id/user_name"
+                android:hint="17862078735"
+                android:textSize="15dp"
+                android:background="@null"
+                android:layout_marginLeft="25dp"
+               />
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+       <!--绑定手机号-->
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true">
+            <TextView
+                android:layout_marginLeft="25dp"
+                style="@style/base_layout"
+                android:layout_width="wrap_content"
+                android:text="账号"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_marginLeft="25dp"
+                style="@style/base_layout"
+                android:id="@+id/user_phone"
+                android:text="17862078735"
+                android:enabled="true"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0F3F6"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/head"
+            android:id="@+id/head_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            app:civ_border_color="#4a9bec"
+            app:civ_border_width="0.5dp" />
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="昵称：" />
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="小琪琪"
+                    android:textSize="15dp" />
+</LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="账号：" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="小女神"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        style="@style/wrap_layout">
+       <Button
+        style="@style/top_layout"
+        android:id="@+id/button2"
+        android:textSize="15dp"
+        android:gravity="center_vertical"
+        android:text="我的主题" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/border_clo"
+            />
+        <Button
+        style="@style/mid_layout"
+        android:id="@+id/button3"
+        android:gravity="center_vertical"
+        android:text="我的收藏"
+        android:textSize="15dp" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/border_clo"
+            />
+    <Button
+        style="@style/bottom_layout"
+        android:id="@+id/button4"
+        android:textSize="15dp"
+        android:gravity="center_vertical"
+        android:text="我的相册"
+         />
+</LinearLayout>
+    <LinearLayout
+        style="@style/wrap_layout">
+    <Button
+        style="@style/single_layout"
+        android:id="@+id/our"
+        android:text="关于我们"
+        android:gravity="center_vertical"
+        android:textSize="15dp" />
+       </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/wrap_layout">
+        <Button
+            style="@style/single_layout"
+            android:id="@+id/help"
+            android:text="帮助与反馈"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+       style="@style/wrap_layout">
+    <Button
+        style="@style/single_layout"
+        android:id="@+id/quit"
+        android:text="退出登录"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textColor="@color/color_red" />
+</LinearLayout>
+
+
+</LinearLayout>

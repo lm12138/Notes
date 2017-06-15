@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.edu.notes.fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<SearchView-->
+        <!--android:id="@+id/se_v"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+    <include layout="@layout/item_forecast_line" />
+
+    <include layout="@layout/item_forecast_line2" />
+
+    <include layout="@layout/item_suggestion"/>
+
+</LinearLayout>
