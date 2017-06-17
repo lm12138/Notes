@@ -51,10 +51,6 @@
             android:name="com.edu.notes.HeadActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.edu.notes.MyPhotoActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustPan"></activity>
     </application>
 
 </manifest>

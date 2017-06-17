@@ -193,6 +193,7 @@ public class HeadActivity extends AppCompatActivity {
             });
         }else {
             Toast.makeText(getApplication(), "头像没变！", Toast.LENGTH_SHORT).show();
+            upload(null,name);
         }
     }
     //更新数据库信息

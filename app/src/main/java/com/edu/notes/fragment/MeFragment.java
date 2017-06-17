@@ -2,8 +2,6 @@ package com.edu.notes.fragment;
 
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -14,14 +12,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.edu.notes.LoginActivity;
-import com.edu.notes.MyPhotoActivity;
 import com.edu.notes.bean.MyUser;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -95,7 +89,13 @@ public class MeFragment extends Fragment {
         bt_quit = (Button) view.findViewById(R.id.quit);
         bt_quit.setOnClickListener(new quitclock());
         lv_myPhoto= (Button) view.findViewById(R.id.button4);
-        lv_myPhoto.setOnClickListener(new myPhotoClick());
+        lv_myPhoto.setOnClickListener(new View.OnClickListener() {
+            @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+            @Override
+            public void onClick(View view) {
+                showBuilder();
+            }
+        });
         bt_theme = (Button) view.findViewById(R.id.button2);
         bt_theme.setOnClickListener(new View.OnClickListener() {
             @TargetApi(Build.VERSION_CODES.LOLLIPOP)
@@ -176,14 +176,6 @@ public class MeFragment extends Fragment {
             startActivity(intent);
 
 
-        }
-    }
-
-    private class myPhotoClick implements View.OnClickListener {
-        @Override
-        public void onClick(View view) {
-            Intent intent=new Intent(getActivity(), MyPhotoActivity.class);
-            startActivity(intent);
         }
     }
 
