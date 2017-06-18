@@ -166,7 +166,6 @@ public class HeadActivity extends AppCompatActivity {
         startActivityForResult(intent, PHOTORESOULT);
     }
     //上传图片
-    //--------------------------------------杂乱区--------------------------------------------------
     public void submitPhoto(View v) {
         //获取昵称
         final String name=user_name.getText().toString();
@@ -214,7 +213,7 @@ public class HeadActivity extends AppCompatActivity {
             }
         });
     }
-//--------------------------------------------------------------------------------------------------
+
 
     private void getUser() {
         String username = (String) BmobUser.getObjectByKey(getApplicationContext(), "username");
